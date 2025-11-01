@@ -5,7 +5,11 @@ body {
     background-color:#D6FF6B;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
-    border-radius:55pt 55pt;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
 }
 h1 {
     color: #00a800; /* Цвет заголовка */
@@ -14,7 +18,9 @@ h1 {
     background-color: aqua;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border-radius:55pt 55pt;
+    border-radius:20px;
+    padding: 5px;
+    
 }
 p {
     color: #00a800; /* Цвет заголовка */
@@ -23,6 +29,25 @@ p {
     background-color: aqua;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border-radius:55pt 55pt;
+    border-radius:  20px;
+    padding: 2px;
 
+}
+
+a {
+    position: 400px 100px 400px 200px;
+    text-decoration: none;
+    background-color: rgb(14, 204, 141);
+    border-radius:  20px;
+    padding: 2px;
+    animation: helicopter 1s infinite;
+}
+h1 {
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  5%   { color: blue; }
+  50%  { color: red; }
+  100% { color: blue; }
 }
